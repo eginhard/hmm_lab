@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+.ob-jupyter/
+_minted*
+__pycache__/
+auto/
+svg-inkscape/
+
+*.bbl
+*.synctex.gz

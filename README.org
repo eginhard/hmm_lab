@@ -1,0 +1,40 @@
+#+title: Introduction to Hidden Markov Models
+#+author: Enno Hermann
+
+This is a tutorial on hidden Markov models (HMMs). It introduces the core problems
+of HMMs and how to solve them with the forward and Viterbi algorithms for the
+example task of classifying vowel sequences.
+
+* Running the notebook
+Create a conda environment with the required packages:
+
+#+begin_src sh
+  conda env create -f environment.yml
+  conda activate hmm_lab
+#+end_src
+
+Launch the notebook:
+
+#+begin_src sh
+  jupyter notebook hmm_lab.ipynb
+#+end_src
+
+Emacs users can directly run the notebook in [[file:hmm_lab.org][hmm_lab.org]] as well.
+
+Answers to the questions are provided in [[file:hmm_lab.pdf][hmm_lab.pdf]].
+
+* Generating the PDF and notebook from the org file
+Use the org exporter to export [[file:hmm_lab.org][hmm_lab.org]] to PDF: =C-c C-e l p=. Ensure that
+the line =# #+EXCLUDE_TAGS: answer= is commented, so that answers to questions
+are included.
+
+Install [[https://github.com/jkitchin/ox-ipynb][ox-ipynb]] and use the org exporter to export to a Jupyter notebook
+without results: =C-c C-e n r=. Uncomment the line =#+EXCLUDE_TAGS: answer= to
+exclude the answers.
+
+* Acknowledgements
+This lab was originally developed by Sacha Krstulović, Hervé
+Bourlard, Hemant Misra, and Mathew Magimai-Doss for the /Speech Processing and
+Speech Recognition/ course at École polytechnique fédérale de Lausanne (EPFL).
+The original Matlab version is available here:
+http://publications.idiap.ch/index.php/publications/show/739
